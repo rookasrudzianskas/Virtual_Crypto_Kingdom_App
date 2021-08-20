@@ -19,6 +19,19 @@ const WelcomeScreen = (props) => {
     }
 
 
+
+    const signInWithGoogle = async () => {
+        console.log("Google");
+        // @ts-ignore
+        // works but there are errors
+        await Auth.federatedSignIn({ provider: "Google" });
+        console.log("DONE");
+    }
+
+    const signInWithApple = () => {
+        console.log("Apple");
+    }
+
     useEffect(() => {
 
         const fetchUser = async () => {
@@ -37,17 +50,6 @@ const WelcomeScreen = (props) => {
 
     }, []);
 
-    const signInWithGoogle = async () => {
-        console.log("Google");
-        // @ts-ignore
-        // works but there are errors
-        await Auth.federatedSignIn({ provider: "Google" });
-        console.log("DONE");
-    }
-
-    const signInWithApple = () => {
-        console.log("Apple");
-    }
 
     return (
         <View style={tw`items-center flex-1 bg-blue-700`}>
