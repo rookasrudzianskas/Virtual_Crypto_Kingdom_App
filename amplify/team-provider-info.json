@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cryptokingdom-dev-144358-authRole",
+      "UnauthRoleArn": "arn:aws:iam::986698840618:role/amplify-cryptokingdom-dev-144358-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::986698840618:role/amplify-cryptokingdom-dev-144358-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cryptokingdom-dev-144358-deployment",
+      "UnauthRoleName": "amplify-cryptokingdom-dev-144358-unauthRole",
+      "StackName": "amplify-cryptokingdom-dev-144358",
+      "StackId": "arn:aws:cloudformation:us-east-1:986698840618:stack/amplify-cryptokingdom-dev-144358/6d0de6e0-fa99-11eb-8b88-0a3d3edde975",
+      "AmplifyAppId": "d23dggnwwsd1kj"
+    },
+    "categories": {
+      "auth": {
+        "cryptokingdomdf5b6cb2": {}
+      },
+      "function": {
+        "cryptokingdomdf5b6cb2PostConfirmation": {
+          "deploymentBucketName": "amplify-cryptokingdom-dev-144358-deployment",
+          "s3Key": "amplify-builds/cryptokingdomdf5b6cb2PostConfirmation-336c743744585a38454f-build.zip"
+        }
+      }
+    }
+  }
+}

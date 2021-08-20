@@ -1,0 +1,17 @@
+{
+  "trigger": true,
+  "modules": [
+    "custom"
+  ],
+  "parentResource": "cryptokingdomdf5b6cb2",
+  "functionName": "cryptokingdomdf5b6cb2PostConfirmation",
+  "resourceName": "cryptokingdomdf5b6cb2PostConfirmation",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/usr/local/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/triggers/PostConfirmation",
+  "triggerTemplate": "PostConfirmation.json.ejs",
+  "triggerEventPath": "PostConfirmation.event.json",
+  "roleName": "cryptokingdomdf5b6cb2PostConfirmation",
+  "skipEdit": true,
+  "enableCors": false
+}
