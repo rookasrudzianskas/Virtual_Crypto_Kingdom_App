@@ -32,23 +32,23 @@ const WelcomeScreen = (props) => {
         console.log("Apple");
     }
 
-    // useEffect(() => {
-    //
-    //     const fetchUser = async () => {
-    //         try {
-    //             const user = await Auth.currentAuthenticatedUser();
-    //
-    //             if (user) {
-    //                 navigation.navigate('Root');
-    //             }
-    //         } catch (e) {
-    //             console.log(e);
-    //         }
-    //     }
-    //
-    //   fetchUser();
-    //
-    // }, []);
+    useEffect(() => {
+
+        const fetchUser = async () => {
+            try {
+                const user = await Auth.currentAuthenticatedUser();
+
+                if (user) {
+                    navigation.navigate('Root');
+                }
+            } catch (e) {
+                console.log(e);
+            }
+        }
+
+      fetchUser();
+
+    }, []);
 
 
     return (
