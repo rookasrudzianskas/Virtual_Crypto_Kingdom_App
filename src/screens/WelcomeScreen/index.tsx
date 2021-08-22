@@ -25,7 +25,6 @@ const WelcomeScreen = (props) => {
         // @ts-ignore
         // works but there are errors
         await Auth.federatedSignIn({ provider: "Google" });
-        navigation.navigate('Root');
         console.log("DONE");
     }
 
