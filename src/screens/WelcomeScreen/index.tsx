@@ -25,6 +25,7 @@ const WelcomeScreen = (props) => {
         // @ts-ignore
         // works but there are errors
         await Auth.federatedSignIn({ provider: "Google" });
+        navigation.navigate('Root');
         console.log("DONE");
     }
 
@@ -32,23 +33,23 @@ const WelcomeScreen = (props) => {
         console.log("Apple");
     }
 
-    useEffect(() => {
-
-        const fetchUser = async () => {
-            try {
-                const user = await Auth.currentAuthenticatedUser();
-
-                if (user) {
-                    navigation.navigate('Root');
-                }
-            } catch (e) {
-                console.log(e);
-            }
-        }
-
-      fetchUser();
-
-    }, []);
+    // useEffect(() => {
+    //
+    //     const fetchUser = async () => {
+    //         try {
+    //             const user = await Auth.currentAuthenticatedUser();
+    //
+    //             if (user) {
+    //                 navigation.navigate('Root');
+    //             }
+    //         } catch (e) {
+    //             console.log(e);
+    //         }
+    //     }
+    //
+    //   fetchUser();
+    //
+    // }, []);
 
 
     return (
